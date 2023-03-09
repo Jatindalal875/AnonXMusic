@@ -12,11 +12,11 @@ API_HASH = getenv("API_HASH")
 
 BOT_TOKEN = getenv("BOT_TOKEN")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://gyanimusic:GyaniMusic@cluster0.dl60qho.mongodb.net/?retryWrites=true&w=majority")
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "⏤͟͞𝑻𝑩𝑯 ダ ᴍᴜsɪᴄ")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "")
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001686010332"))
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "𓆩𝗟𝗜𝗚𝝣‌𝗥𓆪‌ ダ ᴍᴜsɪᴄ")
 
-OWNER_ID = list(map(int, getenv("OWNER_ID", "1356469075").split()))
+OWNER_ID = list(map(int, getenv("OWNER_ID", "1872496002").split()))
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
@@ -25,15 +25,15 @@ UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/Jatindalal875/AnonXM
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/THE_BROTHERHOOD_COUNCIL")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/EAGLE_MAFIA_CLUB")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/liguUpdates")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/Fed_Liger")
 
 SUPPORT_HEHE = SUPPORT_GROUP.split("me/")[1]
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "180"))
 SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180"))
 
-AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "False")
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
 AUTO_LEAVE_ASSISTANT_TIME = int(
     getenv("ASSISTANT_LEAVE_TIME", "5400")
 )
@@ -48,7 +48,7 @@ TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "3"))
 SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
 SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
 
-VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "5"))
+VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "10"))
 SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "50"))
 PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "50"))
 
@@ -76,34 +76,34 @@ clean = {}
 autoclean = []
 
 
-START_IMG_URL = getenv("START_IMG_URL", "")
+START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/83087648248b7c69e94e8.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "",
+    "https://te.legra.ph/file/61e9696b3d08537fa4daf.jpg",
 )
 
-PLAYLIST_IMG_URL = "<a href='https://www.uhdpaper.com/2019/10/sci-fi-digital-art-8k-4956.html'><img src='https://1.bp.blogspot.com/-DzFjO7LHgQw/XZqAwMnS-yI/AAAAAAAAPGw/qrwBZiox-BwKV3aZgk1s3wMvoqSfg_t0gCLcBGAsYHQ/w919-h516-p-k-no-nu/sci-fi-digital-art-uhdpaper.com-8K-4.956-wp.thumbnail.jpg'/></a> <br/>HD Resolution Visit <a href='https://www.uhdpaper.com/2019/10/sci-fi-digital-art-8k-4956.html'>https://www.uhdpaper.com/2019/10/sci-fi-digital-art-8k-4956.html</a>"
+PLAYLIST_IMG_URL = "https://te.legra.ph/file/ad1f7fb314b8b893a25d6.jpg"
 
-GLOBAL_IMG_URL = "https://wallpapershome.com/images/pages/pic_h/12769.jpg"
+GLOBAL_IMG_URL = "https://te.legra.ph/file/1f6e25d1302a1bd28eb35.jpg"
 
-STATS_IMG_URL = "https://images.hdqwalls.com/download/space-digital-art-8k-2h-7680x4320.jpg"
+STATS_IMG_URL = "https://te.legra.ph/file/1f6e25d1302a1bd28eb35.jpg"
 
-TELEGRAM_AUDIO_URL = "https://images.hdqwalls.com/wallpapers/astronaut-black-hole-galaxy-space-4k-a0.jpg"
+TELEGRAM_AUDIO_URL = "https://te.legra.ph/file/3c09a6ae3dc4e271aaf28.jpg"
 
-TELEGRAM_VIDEO_URL = "https://wallpapershome.com/images/wallpapers/space-2560x1440-planet-man-dog-4k-19737.jpg"
+TELEGRAM_VIDEO_URL = "https://te.legra.ph/file/62708c6c5d6a2890ec63c.jpg"
 
 STREAM_IMG_URL = "https://te.legra.ph/file/bd995b032b6bd263e2cc9.jpg"
 
 SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/bb0ff85f2dd44070ea519.jpg"
 
-YOUTUBE_IMG_URL = "https://i.pinimg.com/originals/ee/ff/43/eeff43c6e8ced2d1f761a8d64ac85312.jpg"
+YOUTUBE_IMG_URL = "https://te.legra.ph/file/b7347f15ad229b5745bee.jpg"
 
-SPOTIFY_ARTIST_IMG_URL = "https://martech.org/wp-content/uploads/2017/09/spotify-logo-1920x1080.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/b70b6423922bd16323858.jpg"
 
-SPOTIFY_ALBUM_IMG_URL = "https://techcrunch.com/wp-content/uploads/2021/02/alexander-shatov-JlO3-oY5ZlQ-unsplash.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://te.legra.ph/file/89aad4451af049426a553.jpg"
 
-SPOTIFY_PLAYLIST_IMG_URL = "https://techcrunch.com/wp-content/uploads/2021/02/alexander-shatov-JlO3-oY5ZlQ-unsplash.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://te.legra.ph/file/89aad4451af049426a553.jpg"
 
 
 def time_to_seconds(time):
@@ -130,9 +130,9 @@ if UPSTREAM_REPO:
 if PING_IMG_URL:
     if PING_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
-            PING_IMG_URL = "https://cdn.siasat.com/wp-content/uploads/2022/06/New-Project-49.jpg"
+            PING_IMG_URL = "https://te.legra.ph/file/61e9696b3d08537fa4daf.jpg"
 
 if START_IMG_URL:
     if START_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", START_IMG_URL):
-            START_IMG_URL = "https://static.tnn.in/photo/msid-98430822,imgsize-955840,updatedat-1678019651280,width-1900,height-1400,resizemode-75/98430822.jpg"
+            START_IMG_URL = "https://te.legra.ph/file/83087648248b7c69e94e8.jpg"
