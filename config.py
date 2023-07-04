@@ -10,11 +10,11 @@ load_dotenv()
 API_ID = int(getenv("API_ID", "19413864"))
 API_HASH = getenv("API_HASH", "9e33b9fdf4b840a508be5706104737eb")
 
-BOT_TOKEN = getenv("BOT_TOKEN", "6064615823:AAFjeD7cIKZrHKgfmZplZZugb9g8Ukazq2o")
+BOT_TOKEN = getenv("BOT_TOKEN", None)
 
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://hunter:hunterop@cluster0.yffzly7.mongodb.net/?retryWrites=true&w=majority")
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001821513964")
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "TBH Music")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "ᴅᴇᴇᴘ 💙 ᴍᴜsɪᴄ 🎶")
 
 OWNER_ID = list(map(int, getenv("OWNER_ID", "5613961045").split()))
 
@@ -35,7 +35,7 @@ SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "18000"))
 
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
 AUTO_LEAVE_ASSISTANT_TIME = int(
-    getenv("ASSISTANT_LEAVE_TIME", "180")
+    getenv("ASSISTANT_LEAVE_TIME", "240")
 )
 
 AUTO_DOWNLOADS_CLEAR = getenv("AUTO_DOWNLOADS_CLEAR", "True")
@@ -58,7 +58,7 @@ TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "104857600"))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "1073741824"))
 # https://www.gbmb.org/mb-to-bytes
 
-STRING1 = getenv("STRING_SESSION", "BQAuRzC2CiwzH07mdrNg2Hx62ZjqjAmIH5unVWAuGN-oz7XOQKDwasrxTtfIkKRRKkjQNvql0lMALtmDbZloCXGC9wdsbH96Cz_Ohj_2zQmLGH0CgZDM1YsguwDutqlDCtp59gtrb2VC_IpvNjnfr_uK4A11BBsJ8e2Boy_gq3DG4LZg35BlbXsmYwDWqSgVwiQursQcGQB5njSNi3hS_ULSCt8g_toU-ccFNjvWaXYu53qV6dAbNcm7J_kF3SB7cDx6hHAEuoFFM02bkvqS-zADH9K3ebe-JRkxk33Pgl6WpOSuXO6jIARWhm16i7kZeIVz5pswyznHJO7DN40sGx7GAAAAAWTsCYwA")
+STRING1 = getenv("STRING_SESSION", None)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
