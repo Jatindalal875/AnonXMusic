@@ -15,24 +15,17 @@ BOT_TOKEN = getenv("BOT_TOKEN", None)
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://hunter:hunterop@cluster0.yffzly7.mongodb.net/?retryWrites=true&w=majority")
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001821513964")
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "TBH MUSIC")
-
 OWNER_ID = list(map(int, getenv("OWNER_ID", "5613961045").split()))
-
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
-
 UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/Jatindalal875/AnonXMusic")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
-
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/TEAM_CREMINAL")
 SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/ll_TEAM_CREMINALS_ll")
-
 SUPPORT_HEHE = SUPPORT_GROUP.split("me/")[1]
-
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "18000"))
 SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "18000"))
-
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
 AUTO_LEAVE_ASSISTANT_TIME = int(
     getenv("ASSISTANT_LEAVE_TIME", "240")
